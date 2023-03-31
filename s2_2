@@ -86,3 +86,41 @@ class Main {
     System.out.println("El mes es: " + mesN);
   }
 }
+
+/*
+
+class Main {
+  public static void main(String[] args) {
+
+    //declaraciones if
+    int n1=25,n2=25;
+
+    if (n1<n2){
+      System.out.println("el numero " + n2 + " es el mayor");
+    }
+    else if (n2<n1) {
+      System.out.println("el numero " + n1 + " es el mayor");
+    }
+    else if (n1==25){
+      System.out.println("el numero " + n1 + " es "+ 25);
+    }
+    
+    else {
+      System.out.println("el numero " + n1 + " es igual al numero " +n2);
+    }
+
+  //operador ternario
+    int n4;
+    n4 = (n1==n2)? 1: 0;
+
+    System.out.println("el numero de n4 es " + n4);
+
+    String nombre;
+    nombre = (n1>20) ? "Bueno": "Malo";
+
+    System.out.println("el valor de nombre es " + nombre);
+    
+  }
+}
+
+*/

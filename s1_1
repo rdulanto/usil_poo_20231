@@ -1,0 +1,60 @@
+class Main {
+  public static void main(String[] args) {
+
+    //declarando una variable
+    String nombre, apellido, nombCompleto;
+    nombre = "Ricardo";
+    apellido= "Dulanto";
+    final double pi = 3.1416;
+
+    byte edad = 19;
+    byte num = -20;
+    //pi = 3.1315;
+
+    //nombCompleto= nombre.concat(apellido);
+
+    nombCompleto = nombre + " "+ apellido;
+    System.out.println("hola \n \", "+nombCompleto+"\" y tu edad es " + edad);
+
+    System.out.println("tu nombre tiene " + nombre.length() + " letras");
+
+    System.out.println(pi);
+
+  /* Evaluando los booleans*/
+    boolean flag = true;
+    byte num1 = 10,num2=20;
+
+    if (num1 == num2){
+      flag = true;      
+    } else {
+      flag = false;
+    }
+
+    System.out.println("El resultado es: " + flag);
+    
+    byte n1=10, n6;
+    short n2;
+    int n3, n7;
+    long n4,n5= 100;
+    float n8= 128.65,n9;
+
+    n2 = n1;
+    n3 = n2;
+    n4 = n3;
+
+    n6 = (byte)n5;
+
+    n9 = n5;
+    n7 = (int)n8;
+
+    //es par o impar
+    int miNumero = 23;
+
+    if (miNumero % 2 == 0){
+      //es par      
+    } else{
+      //es impar
+    }
+    
+  }
+}

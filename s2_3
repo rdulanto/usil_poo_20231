@@ -9,7 +9,7 @@ oferta:
  Si compra más de 5 paga S/. 135 por cada uno.
 Escriba un programa en JAVA que teniendo como dato el número de neumáticos que
 uncliente va a comprar, muestre el monto total que pagará por los mismos.
-    */
+    
 
     int neumaticos = 6;
     int precioU = 0, precioT=0;
@@ -26,17 +26,14 @@ uncliente va a comprar, muestre el monto total que pagará por los mismos.
 
     switch (neumaticos){
       case 1:
-        precioU = 145;
-        break;
       case 2:
-        precioU = 145;
-        break;
       case 3:
         precioU = 145;
+        break;
       case 4:
-        precioU = 138;
       case 5:
         precioU = 138;
+        break;
       default:
         precioU = 135;
       
@@ -44,5 +41,93 @@ uncliente va a comprar, muestre el monto total que pagará por los mismos.
     precioT = neumaticos * precioU;
     System.out.println("Usando switch");
     System.out.println("El precio total a pagar es: " + precioT);
+*/
+
+    /*
+    Ejercicio 2
+    MAPFE, agencia de seguros asigna el precio de sus seguros para automóviles basándose en
+el sexo y la edad del conductor.
+ Los hombres menores de 25 años pagan los precios más altos, 1000 soles. Los hombres
+de 25 años o más años pagan 700 soles.
+ Las mujeres de menos de 21 años pagan 800 soles, mientras que las mujeres de 21 años
+o más pagan 500 soles.
+Se le solicita a usted que realice un programa en JAVA que teniendo como dato el sexo
+(‘F’,’M’) y la edad de la persona, muestre el pago correspondiente para el seguro del
+automóvil
+    
+    int edad = 29;
+    char genero = 'f';
+    double costoSeguro = 0;
+    
+    if (genero =='M' || genero == 'm'){
+      if (edad < 25){
+        costoSeguro = 1000;
+      } else{
+        costoSeguro = 700;
+      }
+    } else if (genero =='F' || genero == 'f'){
+      if (edad < 21){
+        costoSeguro = 800;
+      } else{
+        costoSeguro = 500;
+      }      
+    }
+
+    System.out.println("El costo del seguro es: " + costoSeguro);
+    */
+
+/*
+Ejercicio 3
+
+Los propietarios de la pizzería "Don Raúl" calculan el precio de sus pizzas a partir del
+diámetro de éstas y de los ingredientes extras que llevan.
+Si se sabe que por cada centímetro de diámetro la pizzería cobra S/. 1.5 y el precio de cada
+ingrediente extra es de S/.2.5. Realice un programa en JAVA que permita calcular el
+precio de una pizza, teniendo como datos los centímetros de diámetro y la cantidad de
+ingredientesextras que llevará la pizza
+
+    double diametro = 30; //en cm
+    int iExtras = 0;
+
+    double cDiametro = 1.5, pTot;
+    double cIExtra = 2.5;
+
+    pTot = (diametro * cDiametro) + (iExtras * cIExtra);
+
+    System.out.println("El precio total de la pizza es: " + pTot);
+    */
+
+    /*
+    
+    Ejercicio 4
+
+    Para que un obrero pueda calcular su salario semanal, es necesario que tenga en cuenta las
+siguientes consideraciones:
+ Si trabaja hasta 40 horas o menos se le paga $ 16 por cada hora.
+ Si trabaja más de 40 horas se le paga $ 16 por cada una de las primeras 40 horas y $ 20
+por cada hora extra.
+Realice un programa en JAVA que teniendo como dato de entrada el número de horas,
+calculeel salario semanal de un obrero.
+
+    */
+
+    //input
+    int horasTrabajadas = 30, horasExt;
+    double salario;
+
+    //campo calculado
+    if(horasTrabajadas > 40) {
+      
+      horasExt = horasTrabajadas - 40;
+      salario = (40 * 16) + (horasExt * 20);
+    
+    } else {
+      horasExt = 0;
+      salario = horasTrabajadas * 16;
+    }
+
+    System.out.println("El salario de la persona es: " + salario);
+
+    
   }
 }

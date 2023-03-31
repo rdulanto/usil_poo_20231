@@ -1,0 +1,48 @@
+class Main {
+  public static void main(String[] args) {
+    
+    /*
+    Pimentel Hermanos, empresa dedicada a vender neumáticos, está realizando la siguiente
+oferta:
+ Si el cliente decide comprar menos de 3 neumáticos paga por cada uno de ellos S/. 145.
+ Si compra entre 3 y 5 neumáticos paga, por cada uno, S/. 138.
+ Si compra más de 5 paga S/. 135 por cada uno.
+Escriba un programa en JAVA que teniendo como dato el número de neumáticos que
+uncliente va a comprar, muestre el monto total que pagará por los mismos.
+    */
+
+    int neumaticos = 6;
+    int precioU = 0, precioT=0;
+    if (neumaticos < 3){
+      precioU = 145;
+    } else if (neumaticos <= 5) {
+        precioU = 138;
+    } else if (neumaticos > 5) {
+        precioU = 135;      
+    }
+
+    precioT = neumaticos * precioU;
+    System.out.println("El precio total a pagar es: " + precioT);
+
+    switch (neumaticos){
+      case 1:
+        precioU = 145;
+        break;
+      case 2:
+        precioU = 145;
+        break;
+      case 3:
+        precioU = 145;
+      case 4:
+        precioU = 138;
+      case 5:
+        precioU = 138;
+      default:
+        precioU = 135;
+      
+    }
+    precioT = neumaticos * precioU;
+    System.out.println("Usando switch");
+    System.out.println("El precio total a pagar es: " + precioT);
+  }
+}

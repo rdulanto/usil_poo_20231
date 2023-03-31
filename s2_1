@@ -84,3 +84,44 @@ class Main {
     
   }
 }
+
+a    if (compara == 0){
+      System.out.println("El resultado de la comparacion es: son iguales");
+    } 
+    else{
+      System.out.println("El resultado de la comparacion es: son diferentes");
+      
+    }
+
+    boolean contiene = nombre.contains("r");
+    String mensaje;
+    if (contiene) {
+      mensaje = "El caracter \"r\" \nsi esta contenido en " + nombre;
+      System.out.println(mensaje);
+    }
+
+
+
+    byte num1 = 19;
+    short num2;
+    int num3;
+    long num4;
+    float num5;
+    double num6 = 3.1416;
+    Double num7 = 45.15;
+
+    //ampliacion de fundición
+    num4 = num3 = num2 = num1;
+
+    //fundición estrecha
+    num5 = (float)num6;
+    num3 = (int) num5;
+
+    num3 = toInt(num6);
+
+    //num7.
+    
+    
+  }
+  
+}

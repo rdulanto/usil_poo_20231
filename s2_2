@@ -1,0 +1,88 @@
+class Main {
+  public static void main(String[] args) {
+/*
+    int n1=3, n2=0;
+
+    if (n1 == n2){
+      System.out.println("Los numeros son iguales");
+
+      if (n1 == 0){
+        System.out.println("Ambos numeros son 0, evaluados por la primera condición");        
+      }
+      
+    }
+    else if(n1 > n2){
+      System.out.println("El numero " +  n1 + " es mayor.");
+      
+    }
+    else if(n1 < n2){
+      System.out.println("El numero " +  n2 + " es mayor.");
+      
+    }
+    else if((n1 == n2) && (n1==0)){
+      System.out.println("Ambos numeros son 0");
+      
+    }
+
+    else{
+      System.out.println("Hubo un error");
+      
+    }
+    
+    if (n1==3){
+      System.out.println("El numero es 3");
+    }
+
+    */
+
+    //Switch
+
+    String fecha = "30/03/2023";
+    String mes = fecha.substring(3, 5);
+    int m = Integer.parseInt(mes);
+    String mesN;
+    switch (m){
+      case 1: 
+        mesN = "Enero";
+        break;
+      case 2:
+        mesN = "Febrero";
+        break;
+      case 3:
+        mesN = "Marzo";
+        break;
+      case 4:
+        mesN = "Abril";
+        break;
+      case 5:
+        mesN = "Mayo";
+        break;
+      case 6:
+        mesN = "Junio";
+        break;
+      case 7:
+        mesN = "Julio";
+        break;
+      case 8:
+        mesN = "Agosto";
+        break;
+      case 9:
+        mesN = "Setiembre";
+        break;
+      case 10:
+        mesN = "Obtubre";
+        break;
+      case 11:
+        mesN = "Noviembre";
+        break;
+      case 12:
+        mesN = "Diciembre";
+        break;
+      default:
+        mesN = "No existe";
+        break;
+    }
+
+    System.out.println("El mes es: " + mesN);
+  }
+}

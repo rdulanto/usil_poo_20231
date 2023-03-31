@@ -1,0 +1,86 @@
+class Main {
+  public static void main(String[] args) {
+
+  //Casting
+  //Ampliación de fundición
+
+    byte edad = 15;
+    int edad1;
+    long edad2;
+    float num1;
+    double num2 = 39.45, num4;
+    Double num3= 98.62;
+
+    boolean mayorEdad;
+    
+
+    edad1 = edad;
+    edad2 = edad1;
+    
+    //edad2 = edad1;
+
+    //fundición estrecha
+    //casting
+    num1 = (float)num2;
+    num4 = num3.doubleValue();
+
+    if (edad >= 18){
+      mayorEdad = true;
+    }
+    else{
+      mayorEdad = false;
+    }
+
+    String res;
+    if (mayorEdad){
+      res = "Mayor de edad";
+    } else{
+      res = "Menor de edad";
+      
+    }
+
+    System.out.println("Eres mayor de edad: " + res);
+
+    num1 = res.length();
+    System.out.println(num1);
+
+    char caracter;
+    caracter = res.charAt(1);
+    System.out.println(caracter);
+
+    String nombre, ape, apeMat, email;
+    nombre = "Ricardo";
+    ape = "Dulanto";
+    apeMat = "Ramirez";
+
+    email = nombre.charAt(0) + ape ;
+    email += apeMat.charAt(0) + "@usil.pe";
+
+    System.out.println(email.toUpperCase());
+
+    //evaluar si es par o impar
+    int n1=8, n2=5, mayor, menor; 
+    String result;
+
+    if (n1 % 2 == 0)  {
+      result = "par";  
+    } else {
+      result = "impar";
+    }
+
+    n1++;
+    n1 += 1;
+    n1 = n1 + 1;
+      
+    System.out.println("El resultado es :" + result + "el numero ahora es:" + n1);
+
+  mayor = Math.max(n1, n2);
+  menor = Math.min(n1, n2);
+
+  num4 = Math.PI;
+  //Math.
+
+  System.out.println("El mayor es " + mayor + " el menor es " + menor);
+    
+  }
+}
